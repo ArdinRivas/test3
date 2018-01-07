@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* 
+  =====================================
+  CSS for <iframe> embedded Google Map
+  ===================================== 
+*/
+.mapWrapper {
+    position: relative;
+    /* 
+    Do math with the height of your iframe divided by the width, then converted to percent
+    In this example the height is 400 and the width is 600
+    400 / 600 = .66666667 
+    which is 66.6666667% */
+    padding-bottom: 66.6666667%; 
+    height: 0;
+}
+.mapWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    </style>
+  </head>
+  <body>
+    <div class="mapWrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15889.899104042146!2d-4.0133612!3d5.34425835!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sci!4v1515345559718" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </body>
+</html>
